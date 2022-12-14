@@ -35,6 +35,7 @@
     }
   </style>
 
+
   <!--Star Body-->
 
   <!--Formulario-->
@@ -44,10 +45,12 @@
 
       <div class="card rounded" style="width: auto;">
 
+        <!--Card Header-->
         <div class="card-header">
           <h3 class="">Payment form example</h2>
         </div>
 
+        <!--Card Body-->
         <div class="card-body">
 
           <form class="needs-validation" novalidate>
@@ -55,6 +58,8 @@
             <!--Primer Row-->
 
             <div class="form-group row">
+
+              <!--CreditCard-->
               <div class="col-md-4 mb-1">
                 <label for="cardnumber">Card #</label>
                 <input type="text" onkeypress="return onlyNumberKey(event)" class="form-control" id="cardnumber"
@@ -63,6 +68,7 @@
                   Please provide a valid Credit Card.
                 </div>
               </div>
+              <!--CVC-->
               <div class="col-md-4 mb-1">
                 <label for="cvc">CVC #</label>
                 <input type="text" onkeypress="return onlyNumberKey(event)" class="form-control" id="cvc" maxlength="4"
@@ -71,6 +77,7 @@
                   Please provide a valid CVC.
                 </div>
               </div>
+              <!--Amount-->
               <div class="col-md-4 mb-1">
                 <label for="amount">Amount</label>
                 <div class="input-group">
@@ -89,6 +96,7 @@
             <!--Segundo Row-->
             <div class="form-group row">
 
+              <!--First Name-->
               <div class="col-md-6 mb-1">
                 <label for="firstname">First Name</label>
                 <input type="text" class="form-control" id="firstname" minlength="5" maxlength="30" required>
@@ -96,7 +104,7 @@
                   Please provide a valid first Name.
                 </div>
               </div>
-
+              <!--Second Name-->
               <div class="col-md-6 mb-1">
                 <label for="secondname">Second Name</label>
                 <input type="text" class="form-control" id="secondname" minlength="5" maxlength="30" required>
@@ -108,8 +116,9 @@
             </div>
 
             <!--Tercer Row-->
-
             <div class="form-group row">
+
+              <!--City-->
               <div class="col-md-6 mb-3">
                 <label for="city">City</label>
                 <input type="text" class="form-control" id="city" minlength="5" maxlength="30" required>
@@ -117,22 +126,23 @@
                   Please provide a valid city.
                 </div>
               </div>
+
+              <!--State-->
               <div class="col-md-3 mb-3">
                 <label for="state">State</label>
                 <select class="form-control" id="state" required>
                   <option value="">Pick a State</option>
-
                   <option value="Artigas">Artigas</option>
                   <option value="Canelones">Canelones</option>
                   <option value="Cerro Largo">Cerro Largo</option>
                   <option value="Colonia">Colonia</option>
                   <option value="Durazno">Durazno</option>
-
                 </select>
                 <div class="invalid-feedback">
                   Please provide a valid state.
                 </div>
               </div>
+              <!--Zip-->
               <div class="col-md-3 mb-3">
                 <label for="zip">Zip</label>
                 <input type="text" class="form-control" id="zip" onkeypress="return onlyNumberKey(event)" maxlength="5"
@@ -144,16 +154,15 @@
             </div>
 
             <!--Cuarto Row-->
-
             <div class="form-group row">
 
-
+              <!--IconCards-->
               <div class="col-md-3 mb-3 d-flex flex-column">
                 <div class="p-0">
                   <label for="card">We accept:</label>
                 </div>
 
-            
+
                 <div class="p-1 mb-5 bg-dark text-white rounded">
 
                   <div class="form-check form-check-inline">
@@ -188,10 +197,11 @@
 
               </div>
 
+              <!--Div Vacio-->
               <div class="col-md-3 mb-6">
-
               </div>
 
+              <!--Message-->
               <div class="col-md-6 mb-6">
                 <label for="message">Message: </label>
                 <textarea class="form-control" id="message" row="4"></textarea>
@@ -202,10 +212,13 @@
             </div>
 
         </div>
+
+        <!--Card Footer-->
         <div class="card-footer">
 
           <button class="btn btn-primary float-right" type="submit">Send</button>
-          <button class="btn btn-secondary float-right mx-2" onClick="window.location.reload();" type="Reset">Cancel</button>
+          <button class="btn btn-secondary float-right mx-2" onClick="window.location.reload();"
+            type="Reset">Cancel</button>
 
         </div>
 
